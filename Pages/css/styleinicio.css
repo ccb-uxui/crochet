@@ -1,0 +1,236 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 2px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: fit-content;
+    max-height: 100px;
+}
+
+header img { 
+    width: 20%;
+    max-height: 90%;
+    margin-left: 250px;
+    object-fit: contain;
+
+}
+
+
+nav {
+    background-color: #F2F2F2;
+    width: 200px;
+    padding-block: 10px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: flex;
+    align-items:first baseline ;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px;
+
+}
+
+nav ul li {
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+
+nav a {
+text-decoration: none;
+}
+
+main {
+    margin-left: 200px;
+    flex: 1;
+    display: flex;
+
+}
+
+.main-content1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 100px;;
+}
+
+
+.main-content1 .main-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 40%;
+    aspect-ratio: 16 / 9;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+h1 {
+    text-align: center;
+    color: #0021FA ;
+    margin: 20px 0;
+}
+
+
+h2 { 
+    text-align: center;
+    color: black ;
+    margin: 20px 0;
+    justify-content: center;
+
+} 
+
+.offers-section {
+    text-align: center;
+    display: block;
+    align-items: center;
+}
+
+/* Inicio imagenes oferta */
+.inicio-img {
+    width: 90%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+
+.offers-section .offer-images {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.offer-images .offer-imagessem img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+}
+
+
+.wpp {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    width: 50px;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: 200px;
+
+}
+
+footer img {    
+    width: auto;
+    height: 30px;
+    
+
+}
+
+
+.main-content1 ul p {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: 90%;
+    margin: 15px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Perfil imagen */
+.main-content1 .img-perfil { 
+    background-color: aqua;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); ;
+}
+
+/* Pedidos */
+.pedidos {    
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90%;
+    
+}
+
+.pedido-item {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 5px;
+    
+
+    border-radius: 8px; 
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);     
+
+}
+
+.pedido-item img {
+    border-radius: 10%;
+    height: 80px;
+    width: 80px;
+}
+
+.pedido-item .pedidos-p {
+    background-color: transparent;
+    box-shadow: none;
+
+}
+
+.pedido-item .pedidosnum {
+    box-shadow: none;
+
+}
