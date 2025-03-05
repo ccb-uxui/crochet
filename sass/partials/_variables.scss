@@ -1,0 +1,12 @@
+
+
+@mixin tamanio ($ancho,$alto,$objectfit) {
+    width: $ancho;
+    height: $alto;
+    object-fit: $objectfit;
+}
+
+header img {
+    @include tamanio (100px, auto,contain )
+}
+

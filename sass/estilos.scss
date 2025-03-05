@@ -1,12 +1,15 @@
 //comentario de sass
 /*comentario de css*/
 
+@use "partials/variables";
+@use "partials/footer";
+
+
+$azul:#0021fa;
 
 // Nesting
-
-//Body
 /*Body*/
-.body  {
+.body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -15,6 +18,7 @@
     flex-direction: column;
     min-height: 100vh;
 }
+
 
 /*Header*/
 header {
@@ -29,21 +33,16 @@ header {
     width: 100%;
     height: fit-content;
     max-height: 100px;
-    img {
-        width: 50px;
-        height: auto;
-        object-fit: contain;
-        }
+
     a {
-        color: #0021fa;
+        color:$azul;
         }
     }
-
 
 .bg-light {
         background-color: white !important;
         a {
-                color: #0021fa;
+            color: $azul;
         }
     }       
 
@@ -54,7 +53,7 @@ main {
 
 h1 {
     text-align: center;
-    color: #0021fa ;
+    color: $azul;
     margin: 20px 0;
 }
 
@@ -64,23 +63,6 @@ h2 {
     color: black ;
     margin: 20px 0;
     justify-content: center;
-
-}
-
-/*Footer*/
-footer {
-    background-color: white;
-    text-align: center;
-    box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.05);
-    bottom: 0;
-    width: 100%;
-    padding-block: 5px;
-    img {
-        width: auto;
-        height: 30px;
-        margin-block: 10px;
-    
-    }
 
 }
 
@@ -158,7 +140,7 @@ footer {
     margin-top: 100px;
     h1 {
         text-align: center;
-        color: #0021fa ;
+        color:$azul;
         margin: 20px 0;
     }
     ul {
@@ -185,7 +167,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     margin-top: 100px;
     
     .pedidos { 
@@ -201,7 +183,7 @@ footer {
             width: 100%;
             align-items: center;
             justify-content:center;
-            padding: 2px 2px;
+            padding-block: 2px 2px;
             border-radius: 8px;
             background: white;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -212,14 +194,16 @@ footer {
             height: 80px;
             width: 80px;
             max-width: 100%;
+
             }
             .pedidos-p {
             background-color: transparent;
             box-shadow: none;
-            text-align: center;
+            text-align: left;
             }
             .pedidosnum {
-            box-shadow: none
+            box-shadow: none;
+            color: $azul;
             }
         }
     }

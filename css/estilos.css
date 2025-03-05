@@ -1,4 +1,25 @@
 /*comentario de css*/
+header img {
+  width: 100px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+footer {
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.05);
+  bottom: 0;
+  width: 100%;
+  padding-block: 5px;
+}
+footer img {
+  width: auto;
+  height: 30px;
+  margin-block: 10px;
+}
+
 /*Body*/
 .body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
@@ -21,13 +42,9 @@ header {
   position: fixed;
   z-index: 100;
   width: 100%;
+  height: -moz-fit-content;
   height: fit-content;
   max-height: 100px;
-}
-header img {
-  width: 50px;
-  height: auto;
-  object-fit: contain;
 }
 header a {
   color: #0021fa;
@@ -58,21 +75,6 @@ h2 {
   justify-content: center;
 }
 
-/*Footer*/
-footer {
-  background-color: white;
-  text-align: center;
-  box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.05);
-  bottom: 0;
-  width: 100%;
-  padding-block: 5px;
-}
-footer img {
-  width: auto;
-  height: 30px;
-  margin-block: 10px;
-}
-
 /*Logowhatsapp*/
 .wpp {
   position: fixed;
@@ -99,7 +101,8 @@ footer img {
   margin-bottom: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*Main Ofertas*/
@@ -125,7 +128,8 @@ footer img {
 .main-content1 .offer-imagessem img {
   width: 200px;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   margin-block: 5px;
@@ -167,7 +171,7 @@ footer img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   margin-top: 100px;
 }
 .main-content1 .pedidos {
@@ -182,7 +186,7 @@ footer img {
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 2px 2px;
+  padding-block: 2px 2px;
   border-radius: 8px;
   background: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -197,10 +201,11 @@ footer img {
 .main-content1 .pedidos .pedido-item .pedidos-p {
   background-color: transparent;
   box-shadow: none;
-  text-align: center;
+  text-align: left;
 }
 .main-content1 .pedidos .pedido-item .pedidosnum {
   box-shadow: none;
+  color: #0021fa;
 }
 
 /*Miperfil*/
@@ -215,9 +220,8 @@ footer img {
 .main-content1 .img-perfil {
   width: 80px;
   height: 80px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
