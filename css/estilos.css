@@ -224,4 +224,10 @@ h2 {
      object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.main-content1 .card {
+  transition: color 1s;
+}
+.main-content1 .card :hover {
+  color: cadetblue;
 }/*# sourceMappingURL=estilos.css.map */
