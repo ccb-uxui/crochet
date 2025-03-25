@@ -44,7 +44,7 @@ header {
         a {
             color: $azul;
         }
-    }       
+    }
 
 main {
     flex-grow: 1;
@@ -96,7 +96,7 @@ h2 {
     }
 
 }
-    
+
 /*Main Ofertas*/
 .main-content1 {
     flex: 1;
@@ -105,7 +105,7 @@ h2 {
     align-items: center;
     padding: 20px;
     margin-top: 100px;
-    .offer-images { 
+    .offer-images {
         display: flex;
         flex: 1;
         width: 100%;
@@ -115,7 +115,7 @@ h2 {
         .card {
             width: 18rem;
         }
-        
+
     }
     .offer-imagessem {
     img {
@@ -163,36 +163,32 @@ h2 {
 
 /*Main Pedidos*/
 .main-content1 {
-    flex: 1;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+    flex: 1;
+    // flex-direction: column;
+    padding: 20px;
     margin-top: 100px;
-    
-    .pedidos { 
+    object-fit: cover;
+
+    .pedidos {
         list-style: none;
-        display: flex; 
-        flex-direction: column;
-        gap:10px;
         width: 90%;
 
 
-        .pedido-item { 
+        .pedido-item {
             display: flex;
             width: 100%;
             align-items: center;
-            justify-content:center;
-            padding-block: 2px 2px;
+            justify-content:left;
             border-radius: 8px;
             background: white;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-            margin: auto;
-        
+            margin-block: 10px;
+
             img {
             border-radius: 10%;
-            height: 80px;
-            width: 80px;
+            height: 100px;
+            width: 100px;
             max-width: 100%;
 
             }
@@ -200,10 +196,13 @@ h2 {
             background-color: transparent;
             box-shadow: none;
             text-align: left;
+            margin-inline-start: 5%;
+
             }
             .pedidosnum {
             box-shadow: none;
             color: $azul;
+            margin-inline-start: 5%;
             }
         }
     }
@@ -226,7 +225,7 @@ h2 {
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
-    
+
     .card {
         transition: color 1s;
     }
